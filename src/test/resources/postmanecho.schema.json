@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "default": [],
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "args",
+      "data",
+      "files",
+      "form",
+      "headers",
+      "json",
+      "url"
+    ],
+    "properties": {
+      "args": {
+        "type": "object"
+      },
+      "data": {
+        "type": "string",
+        "pattern": "^data$"
+      },
+      "files": {
+        "type": "object"
+      },
+      "form": {
+        "type": "object"
+      },
+      "headers": {
+        "type": "object"
+      },
+      "json": {
+        "type": "null"
+      },
+      "url": {
+        "type": "string"
+      }
+    }
+  }
+}
